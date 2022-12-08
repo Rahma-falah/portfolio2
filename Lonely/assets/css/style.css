@@ -10,12 +10,29 @@
 --------------------------------------------------------------*/
 body {
   font-family: "Open Sans", sans-serif;
-  color: #5a656e;
+  color: white;
+  overflow-x: hidden;
+}
+.image{
+  /* width: 50%; */
 }
 
 a {
   color: #d43076;
   text-decoration: none;
+}
+.custom-img{
+  width: 60%;
+  transition: 0.8s all ease-in;
+  cursor: pointer;
+}
+.custom-img:hover{
+    transform: scale(1.1);
+}
+.boot i{
+  color:#712DF6;
+  background-color: white;
+  font-size: 7em;
 }
 
 a:hover {
@@ -73,7 +90,7 @@ h6 {
   z-index: 997;
   transition: all 0.5s;
   height: 60px;
-  background: #fff;
+  background: #203A41;
   box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.12);
 }
 
@@ -89,7 +106,7 @@ h6 {
 
 #header .logo h1 a,
 #header .logo h1 a:hover {
-  color: #2c4964;
+  color: white;
   text-decoration: none;
 }
 
@@ -132,7 +149,7 @@ h6 {
   justify-content: space-between;
   padding: 10px 0 10px 30px;
   font-size: 14px;
-  color: #2A6266;
+  color:black;
   white-space: nowrap;
   transition: 0.3s;
 }
@@ -148,7 +165,7 @@ h6 {
 .navbar .active,
 .navbar .active:focus,
 .navbar li:hover>a {
-  color: #d43076;
+  color:white;
 }
 
 .navbar .dropdown ul {
@@ -329,12 +346,11 @@ h6 {
 --------------------------------------------------------------*/
 #hero {
   width: 100%;
-  height: 100vh;
+  height: 63vh;
   background: url("../img/photo-1484417894907-623942c8ee29.jpg") top center;
   background-size: cover;
   padding: 0 15px;
 }
-
 #hero h1 {
   margin: 0 0 10px 0;
   font-size: 48px;
@@ -397,8 +413,10 @@ section {
 }
 
 .section-bg {
-  background: linear-gradient(180deg, #f2f6f9 0%, #fff 100%);
+  /* background: linear-gradient(180deg, #f2f6f9 0%, #fff 100%); */
   /* background: black; */
+  background: rgb(0,0,0);
+background: linear-gradient(90deg, rgba(0,0,0,1) 11%, rgba(30,29,29,1) 24%, rgba(88,92,93,1) 100%);
 }
 
 .section-title {
@@ -483,6 +501,9 @@ section {
 .about .content {
   padding: 30px 0;
 }
+.about{
+  background: black;
+}
 
 .about .content h3 {
   font-weight: 500;
@@ -508,7 +529,7 @@ section {
 }
 
 .about .content .count-box span {
-  font-size: 36px;
+  font-size: 34px;
   line-height: 20px;
   display: block;
   font-weight: 700;
@@ -522,7 +543,7 @@ section {
   margin: 0 0 0 50px;
   font-family: "Playfair Display", serif;
   font-size: 14px;
-  color: #437099;
+  color: white;
 }
 
 .about .content .count-box a {
@@ -1068,7 +1089,7 @@ section {
 }
 
 .contact .info {
-  color: #5a656e;
+  color: white;
 }
 
 .contact .info i {
